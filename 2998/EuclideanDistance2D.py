@@ -1,7 +1,7 @@
 """2d"""
+import math
 def main():
     """2d"""
-    import math
     q1 = float(input())
     q2 = float(input())
     p1 = float(input())

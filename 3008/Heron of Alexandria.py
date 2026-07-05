@@ -1,7 +1,7 @@
 """Heron"""
+import math
 def main():
     """Heron"""
-    import math
     a = float(input())
     b = float(input())
     c = float(input())
