@@ -4,13 +4,13 @@ def main():
     month = int(input())
     day = int(input())
     total_day = ((month - 1) * 30) + day
-    if total_day <= 81:
+    if 0 <= total_day < 81:
         print("winter")
-    elif total_day <= 171:
+    elif total_day < 171:
         print("spring")
-    elif total_day <= 261:
+    elif total_day < 261:
         print("summer")
-    elif total_day <= 351:
+    elif total_day < 351:
         print("fall")
     else:
         print("winter")
