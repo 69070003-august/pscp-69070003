@@ -15,25 +15,25 @@
 หมายเลข/ชื่อโจทย์ OJ:
 
 ```text
-
+3111
 ```
 
 OJ submission ID ถ้ามีการส่งแล้ว:
 
 ```text
-
+633623
 ```
 
 สถานะ OJ:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 เวลาที่ใช้คิดและทำโจทย์ด้วยตนเอง:
 
 ```text
-
+30-60 minutes
 ```
 
 เลือกหนึ่งข้อ:
@@ -73,7 +73,7 @@ More than 4 weeks
 ถ้ายังไม่เข้าใจโจทย์ทั้งหมด ให้เขียนสิ่งที่เข้าใจในตอนนี้ ความเข้าใจอาจยังไม่ครบหรืออาจผิดได้ แต่ต้องพยายามอธิบายอย่างจริงใจ
 
 ```text
-
+รับสถานะสมาชิก Y/N จำนวนสินค้า n และราคาสินค้าจำนวน n รายการแสดงราคาสุทธิหลังหักส่วนลดเป็นทศนิยม 2 ตำแหน่ง
 ```
 
 ---
@@ -93,9 +93,9 @@ More than 4 weeks
 สามารถเขียนเป็น pseudocode, flowchart idea หรือขั้นตอนความคิดได้
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1:รับสถานะสมาชิก Y/N จำนวนสินค้า n และราคาสินค้าจำนวน n
+Step 2:ทำตามเงื่อนไขของโจทย์
+Step 3:แสดงราคาสุทธิหลังหักส่วนลดเป็นทศนิยม 2 ตำแหน่ง
 ```
 
 ---
@@ -115,7 +115,7 @@ Step 3:
 ห้ามคัดลอกคำอธิบายจากคนอื่น
 
 ```text
-
+เหมือนแผนที่วางไว้เลยเพราะแผนดี
 ```
 
 ---
@@ -135,31 +135,35 @@ Step 3:
 ทำไมเลือก case นี้:
 
 ```text
-
+สมาชิกสหกรณ์
 ```
 
 Input:
 
 ```text
-
+Y
+3
+100
+200
+300
 ```
 
 Expected output:
 
 ```text
-
+570.00
 ```
 
 Actual output:
 
 ```text
-
+570.00
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +171,34 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+ไม่เป็นสมาชิก แต่ยอดถึง 500 บาท
 ```
 
 Input:
 
 ```text
-
+N
+2
+300
+300
 ```
 
 Expected output:
 
 ```text
-
+582.00
 ```
 
 Actual output:
 
 ```text
-
+582.00
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +206,34 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+ไม่เป็นสมาชิก และยอดไม่ถึง 500 บาท
 ```
 
 Input:
 
 ```text
-
+N
+2
+200
+200
 ```
 
 Expected output:
 
 ```text
-
+400.00
 ```
 
 Actual output:
 
 ```text
-
+400.00
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,7 +243,7 @@ Pass / Not Pass
 ใช้ AI กับโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช้ AI ต้องทำไฟล์นี้ด้วย:
@@ -251,7 +261,7 @@ ai_reflection.md
 ได้ถามเพื่อน TA ผู้สอน หรือบุคคลอื่นเพื่อขอความช่วยเหลือในโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช่ ให้อธิบายสั้น ๆ ว่าได้รับความช่วยเหลือแบบใด
@@ -305,10 +315,10 @@ No
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. | Yes|
+| I understand my final code. |Yes |
+| I recorded the real OJ status. | Yes|
+| I did not copy AI-generated text directly into this file. |Yes |
+| I did not copy code from another person. | Yes|
+| If I received human help, I disclosed it in this file. | Yes|
+| I submitted the final code to the OJ by myself. | Yes|

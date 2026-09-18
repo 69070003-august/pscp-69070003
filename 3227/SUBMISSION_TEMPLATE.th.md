@@ -15,13 +15,13 @@
 หมายเลข/ชื่อโจทย์ OJ:
 
 ```text
-3115
+3227
 ```
 
 OJ submission ID ถ้ามีการส่งแล้ว:
 
 ```text
-633797
+648792
 ```
 
 สถานะ OJ:
@@ -33,8 +33,7 @@ Pass
 เวลาที่ใช้คิดและทำโจทย์ด้วยตนเอง:
 
 ```text
-6-24 hours
-
+15-30 minutes
 ```
 
 เลือกหนึ่งข้อ:
@@ -74,8 +73,8 @@ More than 4 weeks
 ถ้ายังไม่เข้าใจโจทย์ทั้งหมด ให้เขียนสิ่งที่เข้าใจในตอนนี้ ความเข้าใจอาจยังไม่ครบหรืออาจผิดได้ แต่ต้องพยายามอธิบายอย่างจริงใจ
 
 ```text
-รับจำนวนช่วงเวลาเปิดร้าน num, จำนวนเวลาที่ต้องตรวจ check, ช่วงเวลาเปิด–ปิดของร้าน และเวลาที่ต้องการตรวจสอบ
-แสดงจำนวนร้านที่เปิดอยู่ในแต่ละเวลาที่ตรวจสอบ โดยคั่นด้วยช่องว่าง
+รับรหัสไพ่ 1 ใบ เช่น QS โดยตัวแรกคือหน้าไพ่ และตัวสุดท้ายคือดอกไพ่
+แสดงชื่อไพ่เต็มรูปแบบ
 ```
 
 ---
@@ -95,9 +94,9 @@ More than 4 weeks
 สามารถเขียนเป็น pseudocode, flowchart idea หรือขั้นตอนความคิดได้
 
 ```text
-Step 1:รับจำนวนช่วงเวลาเปิดร้าน num, จำนวนเวลาที่ต้องตรวจ check
-Step 2:รับช่วงเวลาเปิด–ปิดของร้าน และเวลาที่ต้องการตรวจสอบ
-Step 3:แสดงจำนวนร้านที่เปิดอยู่ในแต่ละเวลาที่ตรวจสอบ โดยคั่นด้วยช่องว่าง
+Step 1:รับรหัสไพ่ 1 ใบ
+Step 2:แยกรหัสและเทียบไพ่
+Step 3:แสดงชื่อไพ่เต็มรูปแบบ
 ```
 
 ---
@@ -117,7 +116,7 @@ Step 3:แสดงจำนวนร้านที่เปิดอยู่�
 ห้ามคัดลอกคำอธิบายจากคนอื่น
 
 ```text
-เหมือนกันเพราะวางแผนดี
+เหมือนที่วางแผนไว้
 ```
 
 ---
@@ -137,27 +136,25 @@ Step 3:แสดงจำนวนร้านที่เปิดอยู่�
 ทำไมเลือก case นี้:
 
 ```text
-เวลาที่อยู่ในช่วงเปิดร้าน
+ไพ่ Q ดอก S
 ```
 
 Input:
 
 ```text
-1 2
-540 1020
-600 900
+QS
 ```
 
 Expected output:
 
 ```text
-1 1
+queen of spades
 ```
 
 Actual output:
 
 ```text
-1 1
+queen of spades
 ```
 
 Result:
@@ -171,27 +168,25 @@ Pass
 ทำไมเลือก case นี้:
 
 ```text
-ตรวจเวลาที่ตรงกับเวลาเปิดและปิด
+ไพ่ A ดอก H
 ```
 
 Input:
 
 ```text
-1 3
-600 900
-599 600 900
+AH
 ```
 
 Expected output:
 
 ```text
-0 1 0
+ace of hearts
 ```
 
 Actual output:
 
 ```text
-0 1 0
+ace of hearts
 ```
 
 Result:
@@ -205,29 +200,25 @@ Pass
 ทำไมเลือก case นี้:
 
 ```text
-มีหลายร้านเปิดซ้อนกัน
+ไพ่เลข 7 ดอก C
 ```
 
 Input:
 
 ```text
-3 5
-540 1020
-600 660
-1080 1200
-600 659 660 900 1300
+7C
 ```
 
 Expected output:
 
 ```text
-2 2 1 1 0
+7 of clubs
 ```
 
 Actual output:
 
 ```text
-2 2 1 1 0
+7 of clubs
 ```
 
 Result:
@@ -315,10 +306,10 @@ No
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. |Yes |
-| I understand my final code. |Yes |
-| I recorded the real OJ status. | Yes|
+| I wrote this submission in my own words. | Yes|
+| I understand my final code. | Yes|
+| I recorded the real OJ status. |Yes |
 | I did not copy AI-generated text directly into this file. |Yes |
-| I did not copy code from another person. | Yes|
-| If I received human help, I disclosed it in this file. |Yes |
-| I submitted the final code to the OJ by myself. | Yes|
+| I did not copy code from another person. |Yes |
+| If I received human help, I disclosed it in this file. | Yes|
+| I submitted the final code to the OJ by myself. |Yes |

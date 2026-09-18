@@ -15,13 +15,13 @@
 หมายเลข/ชื่อโจทย์ OJ:
 
 ```text
-3115
+3232
 ```
 
 OJ submission ID ถ้ามีการส่งแล้ว:
 
 ```text
-633797
+649017
 ```
 
 สถานะ OJ:
@@ -33,8 +33,7 @@ Pass
 เวลาที่ใช้คิดและทำโจทย์ด้วยตนเอง:
 
 ```text
-6-24 hours
-
+15-30 minutes
 ```
 
 เลือกหนึ่งข้อ:
@@ -74,8 +73,8 @@ More than 4 weeks
 ถ้ายังไม่เข้าใจโจทย์ทั้งหมด ให้เขียนสิ่งที่เข้าใจในตอนนี้ ความเข้าใจอาจยังไม่ครบหรืออาจผิดได้ แต่ต้องพยายามอธิบายอย่างจริงใจ
 
 ```text
-รับจำนวนช่วงเวลาเปิดร้าน num, จำนวนเวลาที่ต้องตรวจ check, ช่วงเวลาเปิด–ปิดของร้าน และเวลาที่ต้องการตรวจสอบ
-แสดงจำนวนร้านที่เปิดอยู่ในแต่ละเวลาที่ตรวจสอบ โดยคั่นด้วยช่องว่าง
+รับค่า jump คือระยะที่กบกระโดดครั้งแรก และ goal คือระยะทางเป้าหมาย
+แสดงจำนวนครั้งที่กบต้องกระโดดเพื่อให้ระยะทางสะสมถึง goal หรือแสดง -1 ถ้าไปไม่ถึง
 ```
 
 ---
@@ -95,9 +94,9 @@ More than 4 weeks
 สามารถเขียนเป็น pseudocode, flowchart idea หรือขั้นตอนความคิดได้
 
 ```text
-Step 1:รับจำนวนช่วงเวลาเปิดร้าน num, จำนวนเวลาที่ต้องตรวจ check
-Step 2:รับช่วงเวลาเปิด–ปิดของร้าน และเวลาที่ต้องการตรวจสอบ
-Step 3:แสดงจำนวนร้านที่เปิดอยู่ในแต่ละเวลาที่ตรวจสอบ โดยคั่นด้วยช่องว่าง
+Step 1:รับค่า jump และ goal
+Step 2:loop และ-2 jumpลงเรื่อยๆ
+Step 3:แสดงจำนวนครั้งที่กบต้องกระโดดเพื่อให้ระยะทางสะสมถึง goal หรือแสดง -1 ถ้าไปไม่ถึง
 ```
 
 ---
@@ -117,7 +116,7 @@ Step 3:แสดงจำนวนร้านที่เปิดอยู่�
 ห้ามคัดลอกคำอธิบายจากคนอื่น
 
 ```text
-เหมือนกันเพราะวางแผนดี
+เหมือนกัน เพราะวางแผนมาดี
 ```
 
 ---
@@ -137,27 +136,25 @@ Step 3:แสดงจำนวนร้านที่เปิดอยู่�
 ทำไมเลือก case นี้:
 
 ```text
-เวลาที่อยู่ในช่วงเปิดร้าน
+ถึงเป้าหมายเร็ว
 ```
 
 Input:
 
 ```text
-1 2
-540 1020
-600 900
+10 20
 ```
 
 Expected output:
 
 ```text
-1 1
+3
 ```
 
 Actual output:
 
 ```text
-1 1
+3
 ```
 
 Result:
@@ -171,27 +168,25 @@ Pass
 ทำไมเลือก case นี้:
 
 ```text
-ตรวจเวลาที่ตรงกับเวลาเปิดและปิด
+ถึงเป้าหมายพอดี
 ```
 
 Input:
 
 ```text
-1 3
-600 900
-599 600 900
+5 9
 ```
 
 Expected output:
 
 ```text
-0 1 0
+2
 ```
 
 Actual output:
 
 ```text
-0 1 0
+2
 ```
 
 Result:
@@ -205,29 +200,25 @@ Pass
 ทำไมเลือก case นี้:
 
 ```text
-มีหลายร้านเปิดซ้อนกัน
+ไปไม่ถึงเป้าหมาย
 ```
 
 Input:
 
 ```text
-3 5
-540 1020
-600 660
-1080 1200
-600 659 660 900 1300
+3 10
 ```
 
 Expected output:
 
 ```text
-2 2 1 1 0
+-1
 ```
 
 Actual output:
 
 ```text
-2 2 1 1 0
+-1
 ```
 
 Result:
@@ -317,8 +308,8 @@ No
 |---|---|
 | I wrote this submission in my own words. |Yes |
 | I understand my final code. |Yes |
-| I recorded the real OJ status. | Yes|
+| I recorded the real OJ status. |Yes |
 | I did not copy AI-generated text directly into this file. |Yes |
 | I did not copy code from another person. | Yes|
-| If I received human help, I disclosed it in this file. |Yes |
+| If I received human help, I disclosed it in this file. | Yes|
 | I submitted the final code to the OJ by myself. | Yes|
