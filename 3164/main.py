@@ -10,9 +10,9 @@ def main():
             numlist.append(a)
         else:
             numlist.append(b)
-    for i in range(num):
-        if i == num -1:
-            print(f"{numlist[-1]} = {sum(numlist)}")
-        else:
-            print(f"{numlist[i]} + ",end="")
+    if num == 1:
+        print(numlist[0])
+    else:
+        print(" + ".join(map(str, numlist)), "=", sum(numlist))
+
 main()
